@@ -2,13 +2,192 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Science</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="./images/letter-s.png" type="image/x-icon">
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body> 
+      <nav>
+      <div class="nav-elements">
+        <h1 class="main-title">Science Journal</h1>
+          <ul class="nav-list">
+          <li>Home</li>
+          <li>Issues</li>
+          <li>Authors</li>
+          <li>About</li>
+          <li>Subscribe</li>
+          </ul>   
+        </div>
+      
+      </nav>
+    
+      <section class="main-section">
+      
+         <div class="subscription-container">
+        
+          <h1 class="titles">Select the subscription format</h1>
+          
+
+        <div class="sub-container-2">  
+           <div class="card">
+              <p>Digital subscription</p>
+              <img class="images-subscription" src="./images/Science _ AAAS.gif" alt="digital-subscription">
+              <ul class="subscription-list">
+                 <li>Unlimited access to stories on ScientificJournal.com </li>
+                 <li>Unlimited access to the digital archive including all issues</li>
+          </ul>
+          <button id="select-button" class="subscription-button">Select</button>
+           </div>
+
+
+        
+           <div class="card">
+         <p>Print + Digital Subscription</p> 
+         <img class="images-subscription" src="./images/Print.jpeg" alt="print-subscription">
+         <ul class="subscription-list">
+          <li>Unlimited access to stories on ScientificJournal.com</li>
+          <li> Unlimited access to the digital archive including all issues</li>
+          <li>Print issues of the magazine delivered right to your home</li>
+         </ul>
+          <button id="select-button2" class="subscription-button">Select</button>
+            </div>
+
+        </div>
+          
+         </div>
+
+         <div class="user-data">
+          <h1 class="titles">Enter your information</h1>
+          <form class="user-data-information" action="">  
+           
+            <div class="data-inputs">
+               <label for="first-name"> First Name</label>
+               <input type="text">
+            </div> 
+
+
+            <div class="data-inputs">
+              <label for="last-name"> Last Name</label>
+              <input type="text">
+            </div>
+
+
+            <div class="data-inputs">
+              <label for="email">Email</label>
+              <input type="email">
+            </div>
+
+            <div class="data-inputs">
+              <label for="email">Verify Email Address</label>
+              <input type="email">
+            </div>
+
+            <div class="data-inputs">
+              <label for="adress">Address</label>
+              <input type="text">
+            </div>
+
+            <div class="data-inputs">
+              <label for="country">Choose your country</label>
+              <select name="country" id="country">
+                <option value="Canada">Canada</option>
+                <option value="USA">Estados Unidos</option>
+                <option value="Mexico">Mexico</option>
+              </select>
+            </div>
+
+            <div class="data-inputs">
+              <label for="city">City</label>
+              <input type="text">
+            </div>
+
+            <div class="data-inputs">
+              <label for="state">State</label>
+              <input type="text">
+            </div>
+
+            <div class="data-inputs">
+              <label for="ZIP">ZIP</label>
+              <input type="text">
+            </div>
+          </form>
+         </div>
+
+        
+
+
+    <!--VALIDATION CONTAINER-->
+        <div class="payment-container">
+          <h1 class="titles">Enter your payment information</h1>
+          <div class="payment-information">
+            <form class="validation">
+
+
+              <div class="card-number data-inputs"> 
+                <label for="number">Credit Card</label>
+                <input type="text" id="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')"  pattern=".{16,}" required title="16 characters minimum" maxlength="16">
+              </div>
+
+
+              <div class="card-code data-inputs">
+              <label for="code">Security Code</label>
+              <input type="text" id="code">
+              </div>
+
+
+              <div class="expiration data-inputs">
+              <label for="expiration date">Expiration</label>
+              <select name="expiration-data" id="">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              </select>
+              <select name="expiration-data" id="">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                </select>
+                </div>
+                <div class="valid data"> 
+                  <p>card valid!</p> 
+                </div>
+                <div class="notvalid"> 
+                  <p>your card number is not valid, enter another card number</p> 
+                </div>
+
+                <button type="submit"  id="validate">Validate Card</button>
+
+            </form>
+
+            <div class="submit-order"></div>
+          </div>
+         </div>
+            
+      </section>
+
+
+
+
+
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>
