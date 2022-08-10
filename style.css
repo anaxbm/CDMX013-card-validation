@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,500&display=swap');
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;   
+}
+nav{ 
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+.nav-elements{ 
+    min-height: 10vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    gap: 2rem;
+}
+.nav-list{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+    cursor: pointer;
+}
+.nav-list li:hover{
+    border-bottom: .1rem solid white;
+}
+/*estilos de la seccion principal*/
+.main-section{
+    height: 167vh;
+    background-color:#F1F1F1;
+    width: 60vw;
+    margin: auto;
+    border: .5rem solid white;
+    
+}
+.subscription-container{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    /*background-color: rgb(255, 0, 0);*/
+    /*CONTENIDO*/
+}
+.sub-container-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}    
+.subscription-list{ 
+    width: 60%;
+}
+.card{ 
+    border: .23rem solid black;
+    width: 35%;
+    height: 45vh;
+    /*background-color: rgb(169, 117, 145);*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.images-subscription{
+    height: 12rem;
+    width: 8rem;
+}
+#select-button{ 
+    font-size: 1.5rem;
+    width: 10rem;
+}
+#select-button2{
+    font-size: 1.5rem;
+    width: 10rem;
+}
+.subscription-button{
+    background-color: white;
+}
+.subscription-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.user-data{
+    height: 60vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.user-data, label{ 
+    margin-right: 0rem;
+}
+
+.user-data-information{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;  
+    height: 50vh;
+    width: 60%;
+    /*background-color: #4e13ce;*/
+}
+.data-inputs{ 
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.payment-container{
+    height: 45vh;
+    /*background-color: darkorchid;*/
+    font-size:3rem;
+    font-weight: bold;
+}
+.titles{
+   background-color: #100F0F;
+   color: white;
+    height: 10vh;
+    font-size: 2rem;
+    text-align: center;
+    /* top and bottom & left y right*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-information{
+    /*background-color: rgb(84, 151, 131);*/
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.validation{
+    height: 30vh;
+    width: 50%;
+    /*background-color: darkseagreen;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+}
+.card-number{
+    display: flex;
+}
+.card-code{
+    display: flex;
+}
+.expiration{
+    display: flex;
+}
+.card-number, .card-code, .expiration{
+   /*background-color: rgb(134, 134, 160);*/
+    font-size: 2rem;
+}
+#validate{ 
+    background-color: white;
+    width: 10rem;
+    height: 3rem;
+}
+#validate:hover{
+    background-color: black;
+    color: white;
+}
+.valid{
+    color: #7DCE13;
+    display:none;
+    /*background-color:antiquewhite;*/
+    font-size: 2rem;
+}
+.notvalid{ 
+    color: #EB1D36;
+    display: none;
+    /*background-color: aqua;*/
+    font-size: 2rem;
+}
+.submit-order{
+    height: 40vh;
+    width: 50%;
+    /*background-color: pink;*/
+}
